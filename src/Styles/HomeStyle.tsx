@@ -2,7 +2,7 @@ import { createGlobalStyle, styled } from "styled-components";
 
 const BodyStyle = createGlobalStyle`
   body {
-    background-color: ${props => props.theme.colors.backgroundPrimary};
+    background: linear-gradient(to top right, #68bdc2 -6%, #cf5880);
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -11,13 +11,12 @@ const BodyStyle = createGlobalStyle`
     justify-content: center;
   }
 `
-const Home = styled.div`
-  background-color: #e0e0e0;
-  height: 500px;
-  width: 1000px;
-`
 const BoxButtons = styled.div`
-  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 9rem 9rem 9rem 9rem;
+  grid-gap: 1rem;
+  height: 9rem;
+  width: fit-content;
 `
 
-export { Home, BoxButtons, BodyStyle };
+export { BoxButtons, BodyStyle };

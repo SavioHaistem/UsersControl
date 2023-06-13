@@ -1,8 +1,9 @@
 const AppTheme = {
   colors: {
-    primary: '#0d71fe',
+    primary: '#ffffff',
     secundary: '#0000de',
-    backgroundPrimary: '#c3c3c3', 
+    backgroundPrimary: '#dadada',
+    backgroundSecundary: '#dadadaede',
     text: 'white'
   },
   fonts: {
