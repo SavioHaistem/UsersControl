@@ -7,7 +7,7 @@ const AppTheme = {
     text: 'white'
   },
   fonts: {
-    basic: 'font-family: "Courier New", Courier, monospace'
+    menus: 'Arial'
   }
 };
 

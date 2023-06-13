@@ -15,6 +15,8 @@ const BoxButtons = styled.div`
   display: grid;
   grid-template-columns: 9rem 9rem 9rem 9rem;
   grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
   height: 9rem;
   width: fit-content;
 `

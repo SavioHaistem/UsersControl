@@ -1,19 +1,21 @@
-import { styled } from "styled-components";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { MainButtonStyle } from "../Styles/ButtonStyles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Button = styled.button`
-  background-color: ${({theme})=> theme.colors.primary};
-  border-radius: 1rem;
-  border: none;
-`
 
 interface iProps {
-  onClick: any,
-  ButtonText: string
+  onClick: () => void,
+  ButtonText: string,
+  icon: IconDefinition
 }
 
-function MainButton({ onClick, ButtonText }: iProps) {
+function MainButton({ onClick, ButtonText, icon }: iProps) {
   return (
-    <Button onClick={onClick}> {ButtonText} </Button>
+    <MainButtonStyle 
+      onClick={onClick}>
+        <FontAwesomeIcon icon={icon}/>
+        {ButtonText} 
+    </MainButtonStyle> 
   );
 }
 

@@ -1,5 +1,6 @@
 import { BodyStyle ,BoxButtons } from "../Styles/HomeStyle";
 import MainButton from "./MainButtons";
+import { faUserPlus, faUserPen, faUsersViewfinder, faUserMinus } from "@fortawesome/free-solid-svg-icons";
 
 
 function HomePage() {
@@ -14,16 +15,24 @@ function HomePage() {
           <BoxButtons>
             <MainButton 
               onClick={add} 
-              ButtonText="Adicionar"/>
+              ButtonText="Adicionar"
+              icon={faUserPlus}
+              />
             <MainButton 
               onClick={add} 
-              ButtonText="Visualizar"/>
+              ButtonText="Visualizar"
+              icon={faUsersViewfinder}
+              />
             <MainButton 
               onClick={add} 
-              ButtonText="Editar"/>
+              ButtonText="Editar"
+              icon={faUserPen}
+              />
             <MainButton 
               onClick={add} 
-              ButtonText="Remover"/>
+              ButtonText="Remover"
+              icon={faUserMinus}
+              />
           </BoxButtons>
     </>
   );
