@@ -12,7 +12,7 @@ const MainButtonStyle = styled.button`
   height: 100%;
   width: 100%;
   transition: 0.2s;
-  color: ${({theme})=> theme.fonts.color};
+  color: ${({theme})=> theme.fonts.textIn};
   font-size: medium;
   font-family: ${({theme})=> theme.fonts.menus};
   font-weight: 400;

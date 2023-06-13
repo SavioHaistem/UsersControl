@@ -1,3 +1,4 @@
+import AppTitle from "../Styles/AppTitle";
 import { BodyStyle ,BoxButtons } from "../Styles/HomeStyle";
 import MainButton from "./MainButtons";
 import { faUserPlus, faUserPen, faUsersViewfinder, faUserMinus } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +11,10 @@ function HomePage() {
   }
 
   return ( 
-    <>    
+    <>
+        <AppTitle> 
+          Users Control
+        </AppTitle>
       <BodyStyle/>
           <BoxButtons>
             <MainButton 

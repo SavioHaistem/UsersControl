@@ -7,7 +7,9 @@ const AppTheme = {
   },
   fonts: {
     menus: 'Arial',
-    color: '#3a3a3aeb'
+    beautiful: 'League',
+    textIn: '#450081eb',
+    textOut: '#eeee'
   }
 };
 
