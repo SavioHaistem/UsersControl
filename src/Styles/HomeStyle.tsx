@@ -7,10 +7,19 @@ const BodyStyle = createGlobalStyle`
     width: 100%;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: space-around;
     justify-content: center;
   }
 `
+const Home = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: fit-content;
+  height: 80vh;
+`
+
 const BoxButtons = styled.div`
   display: grid;
   grid-template-columns: 9rem 9rem 9rem 9rem;
@@ -21,4 +30,4 @@ const BoxButtons = styled.div`
   width: fit-content;
 `
 
-export { BoxButtons, BodyStyle };
+export { BoxButtons, BodyStyle, Home };

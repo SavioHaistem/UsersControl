@@ -2,7 +2,7 @@ import AppTitle from "../Styles/AppTitle";
 import { BodyStyle ,BoxButtons } from "../Styles/HomeStyle";
 import MainButton from "./MainButtons";
 import { faUserPlus, faUserPen, faUsersViewfinder, faUserMinus } from "@fortawesome/free-solid-svg-icons";
-
+import { Home } from "../Styles/HomeStyle";
 
 function HomePage() {
 
@@ -12,10 +12,11 @@ function HomePage() {
 
   return ( 
     <>
+      <BodyStyle/>
+      <Home>
         <AppTitle> 
           Users Control
         </AppTitle>
-      <BodyStyle/>
           <BoxButtons>
             <MainButton 
               onClick={add} 
@@ -38,6 +39,7 @@ function HomePage() {
               icon={faUserMinus}
               />
           </BoxButtons>
+      </Home>
     </>
   );
 }
