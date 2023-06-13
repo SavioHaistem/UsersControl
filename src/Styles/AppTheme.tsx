@@ -4,10 +4,10 @@ const AppTheme = {
     secundary: '#0000de',
     backgroundPrimary: '#dadada',
     backgroundSecundary: '#dadadaede',
-    text: 'white'
   },
   fonts: {
-    menus: 'Arial'
+    menus: 'Arial',
+    color: '#3a3a3aeb'
   }
 };
 

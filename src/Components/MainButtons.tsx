@@ -1,7 +1,6 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { MainButtonStyle } from "../Styles/ButtonStyles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import AwesomeIcon from "../Styles/AwesomeIcon";
 
 interface iProps {
   onClick: () => void,
@@ -13,7 +12,7 @@ function MainButton({ onClick, ButtonText, icon }: iProps) {
   return (
     <MainButtonStyle 
       onClick={onClick}>
-        <FontAwesomeIcon icon={icon}/>
+      <AwesomeIcon icon={icon}/>
         {ButtonText} 
     </MainButtonStyle> 
   );
