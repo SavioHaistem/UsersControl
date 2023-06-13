@@ -11,15 +11,15 @@ const MainButtonStyle = styled.button`
   border: none;
   height: 100%;
   width: 100%;
-  transition: 0.2s;
+  transition: 0.4s;
   color: ${({theme})=> theme.fonts.textIn};
   font-size: medium;
   font-family: ${({theme})=> theme.fonts.menus};
   font-weight: 400;
 
   &:hover {
-    width: calc(100% + 3px);
-    height: calc(100% + 3px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
     cursor: pointer;
   }
 `

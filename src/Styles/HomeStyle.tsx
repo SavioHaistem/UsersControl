@@ -4,11 +4,10 @@ const BodyStyle = createGlobalStyle`
   body {
     background: linear-gradient(to top right, #68bdc2 -6%, #cf5880);
     height: 100vh;
-    width: 100%;
-    overflow: hidden;
     display: flex;
     align-items: space-around;
     justify-content: center;
+    overflow: hidden;
   }
 `
 const Home = styled.div`
@@ -17,17 +16,26 @@ const Home = styled.div`
   align-items: center;
   justify-content: space-evenly;
   width: fit-content;
-  height: 80vh;
+  overflow: hidden;
+  height: 90vh;
 `
 
 const BoxButtons = styled.div`
   display: grid;
-  grid-template-columns: 9rem 9rem 9rem 9rem;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 9rem));
+  grid-auto-rows: 9rem;
   grid-gap: 1rem;
   align-items: center;
   justify-items: center;
-  height: 9rem;
-  width: fit-content;
+  justify-content: center;
+  padding: 1rem;
+  overflow: auto;
+  height: 20rem;
+  width: 70vw;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 export { BoxButtons, BodyStyle, Home };
