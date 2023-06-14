@@ -3,6 +3,7 @@ import { BodyStyle ,BoxButtons } from "../Styles/HomeStyle";
 import MainButton from "./MainButtons";
 import { faUserPlus, faUserPen, faUsersViewfinder, faUserMinus } from "@fortawesome/free-solid-svg-icons";
 import { Home } from "../Styles/HomeStyle";
+import { Link } from "react-router-dom";
 
 function HomePage() {
 
@@ -19,12 +20,12 @@ function HomePage() {
         </AppTitle>
           <BoxButtons>
             <MainButton 
-              onClick={add} 
+              onClick={'adicionar'} 
               ButtonText="Adicionar"
               icon={faUserPlus}
               />
             <MainButton 
-              onClick={add} 
+              onClick={<Link to={'/visualizar'}/>} 
               ButtonText="Visualizar"
               icon={faUsersViewfinder}
               />

@@ -1,20 +1,19 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { MainButtonStyle } from "../Styles/ButtonStyles";
+import { Linker } from "../Styles/ButtonStyles";
 import AwesomeIcon from "../Styles/AwesomeIcon";
 
 interface iProps {
-  onClick: () => void,
+  onClick: any,
   ButtonText: string,
   icon: IconDefinition
 }
 
-function MainButton({ onClick, ButtonText, icon }: iProps) {
+function MainButton({ ButtonText, icon }: iProps) {
   return (
-    <MainButtonStyle 
-      onClick={onClick}>
+    <Linker to={'/adicionar'}>
       <AwesomeIcon icon={icon}/>
-        {ButtonText} 
-    </MainButtonStyle> 
+          {ButtonText}
+    </Linker>
   );
 }
 
