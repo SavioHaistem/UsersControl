@@ -3,14 +3,14 @@ import { Linker } from "../Styles/ButtonStyles";
 import AwesomeIcon from "../Styles/AwesomeIcon";
 
 interface iProps {
-  onClick: any,
+  LinkTo: string,
   ButtonText: string,
   icon: IconDefinition
 }
 
-function MainButton({ ButtonText, icon }: iProps) {
+function MainButton({ ButtonText, icon, LinkTo }: iProps) {
   return (
-    <Linker to={'/adicionar'}>
+    <Linker to={LinkTo}>
       <AwesomeIcon icon={icon}/>
           {ButtonText}
     </Linker>
