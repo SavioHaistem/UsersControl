@@ -5,11 +5,7 @@ import { faUserPlus, faUserPen, faUsersViewfinder, faUserMinus } from "@fortawes
 import { Home } from "../Styles/HomeStyle";
 
 function HomePage() {
-
-  const add =()=> {
-    console.log('hello')
-  }
-
+  
   return ( 
     <>
       <BodyStyle/>
