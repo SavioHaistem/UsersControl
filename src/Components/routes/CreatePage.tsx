@@ -1,4 +1,5 @@
-import axios from "axios";
+import useApi from "../Hooks/useApi";
+
 
 interface User {
   id: number,
@@ -8,11 +9,15 @@ interface User {
 
 function CreatePage() {
 
-  const user:User = { id: 2, name: 'romeu', email: 'erromeu.co' }
+  const user:User = { 
+    id: 6,
+    name: 'Judas',
+    email: 'LadyGaga.com'
+  };
 
   const sendIt =()=> {
-    axios.post('http://localhost:5555/adicionar', user);
-  }
+    useApi('POST','https://users-control-backend.onrender.com/users', user);
+  };
 
   return ( 
     <>
@@ -21,6 +26,6 @@ function CreatePage() {
       </button>
     </>
    );
-}
+};
 
 export default CreatePage;
