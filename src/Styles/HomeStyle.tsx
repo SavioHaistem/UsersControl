@@ -9,7 +9,7 @@ const BodyStyle = createGlobalStyle`
     justify-content: center;
     overflow: hidden;
   }
-`
+`;
 const Home = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ const Home = styled.div`
   width: fit-content;
   overflow: hidden;
   height: 90vh;
-`
+`;
 
 const BoxButtons = styled.div`
   display: grid;
@@ -32,10 +32,10 @@ const BoxButtons = styled.div`
   overflow: auto;
   height: 20rem;
   width: 70vw;
-  
+
   &::-webkit-scrollbar {
     display: none;
   }
-`
+`;
 
 export { BoxButtons, BodyStyle, Home };

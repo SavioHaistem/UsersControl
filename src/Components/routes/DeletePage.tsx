@@ -1,5 +1,5 @@
 function DeletePage() {
-  return ( <p>Delete</p> );
+  return <p>Delete</p>;
 }
 
 export default DeletePage;

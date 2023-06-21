@@ -7,16 +7,15 @@ const ReadStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
   };
-`
+`;
 const Table = styled.table`
-  background-color: ${({theme})=>theme.colors.backgroundPrimary};
+  background-color: ${({ theme }) => theme.colors.backgroundPrimary};
   padding: 1.5rem;
   border-radius: 1rem;
   height: fit-content;
   width: 25rem;
 `;
-const TableRow = styled.tr`
-`;
+const TableRow = styled.tr``;
 
 const TableData = styled.td`
   color: #313131;

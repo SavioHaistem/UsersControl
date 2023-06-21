@@ -1,22 +1,27 @@
-import { TableRow, Table, TableData, TableTitleData } from "../Styles/ReadStyle";
+import {
+  TableRow,
+  Table,
+  TableData,
+  TableTitleData,
+} from "../Styles/ReadStyle";
 import { userItem } from "../Types/usersItem";
 
-
-function UsersList({usersData} : {usersData: userItem[]}) {
+function UsersList({ usersData }: { usersData: userItem[] }) {
   return (
-      <Table>
-        <TableRow>
-          <TableTitleData>Id</TableTitleData>
-          <TableTitleData>Name</TableTitleData>
-          <TableTitleData>Email</TableTitleData>
-        </TableRow>
-        {usersData.map(item => 
+    <Table>
+      <TableRow>
+        <TableTitleData>Id</TableTitleData>
+        <TableTitleData>Name</TableTitleData>
+        <TableTitleData>Email</TableTitleData>
+      </TableRow>
+      {usersData.map((item) => (
         <TableRow>
           <TableData>{item.id}</TableData>
           <TableData>{item.name}</TableData>
           <TableData>{item.email}</TableData>
-        </TableRow> )}
-      </Table>
+        </TableRow>
+      ))}
+    </Table>
   );
 }
 
