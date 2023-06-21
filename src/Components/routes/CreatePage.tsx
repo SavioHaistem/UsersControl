@@ -10,9 +10,9 @@ interface User {
 function CreatePage() {
 
   const user:User = { 
-    id: 6,
-    name: 'Judas',
-    email: 'LadyGaga.com'
+    id: 12,
+    name: 'HojeEdia',
+    email: 'ihu.com'
   };
 
   const sendIt =()=> {

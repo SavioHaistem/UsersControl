@@ -15,7 +15,7 @@ function App() {
           <Route path="/visualizar" element={<ReadPage/>}/>
           <Route path="/editar" element={<UpdatePage/>}/>
           <Route path="/remover" element={<DeletePage/>}/>
-        </Routes>  
+        </Routes>
     </>
   )
 }

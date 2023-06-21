@@ -5,22 +5,22 @@ import useApi from "../Hooks/useApi";
 
 function ReadPage() {
   
-  //const [users, setUsers]: any = useState();
+  const [users, setUsers]: any = useState();
 
-  /* useEffect(()=>{
+   useEffect(()=>{
     const fetchData =async()=> {
       setUsers( await useApi('GET', 'https://users-control-backend.onrender.com/users'))
     };
 
     fetchData();
-  },[]) */
+  },[]);
 
-  //users ? console.table(users) : 'await'
+  users ? console.table(users) : 'await'
 
   return ( 
     <>
       <ReadStyle/>
-      <UsersList usersData={[{ id: 1, name: 'savio', email: 'unrra@savio'}]}/>
+      <UsersList usersData={users || [{name: 'savio', id: 1, email: 'teste.dantas'}]}/>
     </>
   );
 }

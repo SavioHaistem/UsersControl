@@ -3,7 +3,7 @@ const AppTheme = {
     primary: '#ffffff',
     secundary: '#0000de',
     backgroundPrimary: '#dadada',
-    backgroundSecundary: '#dadadaede',
+    backgroundSecundary: '#d1d1d1ece',
   },
   fonts: {
     menus: 'Arial',
