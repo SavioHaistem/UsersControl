@@ -1,20 +1,10 @@
 import useApi from "../Hooks/useApi";
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-}
+import NewUser from "../Hooks/useUser";
 
 function CreatePage() {
-  const user: User = {
-    id: 12,
-    name: "HojeEdia",
-    email: "ihu.com",
-  };
 
   const sendIt = () => {
-    useApi("POST", "https://users-control-backend.onrender.com/users", user);
+    useApi("POST", "https://users-control-backend.onrender.com/users", NewUser);
   };
 
   return (
