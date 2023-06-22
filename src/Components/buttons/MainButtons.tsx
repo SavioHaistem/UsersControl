@@ -1,6 +1,6 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { Linker } from "../Styles/ButtonStyles";
-import AwesomeIcon from "../Styles/AwesomeIcon";
+import { Linker } from "../../Styles/ButtonStyles";
+import AwesomeIcon from "../../Styles/AwesomeIcon";
 
 interface iProps {
   LinkTo: string;

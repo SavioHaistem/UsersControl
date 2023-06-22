@@ -1,6 +1,6 @@
 import AppTitle from "../Styles/AppTitle";
 import { BodyStyle, BoxButtons } from "../Styles/HomeStyle";
-import MainButton from "./MainButtons";
+import MainButton from "./buttons/MainButtons";
 import {
   faUserPlus,
   faUserPen,

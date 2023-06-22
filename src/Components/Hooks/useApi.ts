@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 function useApi(method: string, url: string, configs: object = {}): any {
   const UpdateApi =async()=> {
     
