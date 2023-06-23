@@ -1,5 +1,7 @@
 import useApi from "../Hooks/useApi";
 import NewUser from "../Hooks/useUser";
+import { CreatePageBody } from "../../Styles/PageStyles";
+import RoundedButton from "../buttons/RoundedButton";
 
 function CreatePage() {
 
@@ -9,7 +11,11 @@ function CreatePage() {
 
   return (
     <>
-      <button onClick={sendIt}> Enviar User </button>
+      <CreatePageBody />
+        <CreateUserForm>
+
+        </CreateUserForm>
+      <RoundedButton onClick={{ sendIt }} icon={''}> Enviar </RoundedButton>
     </>
   );
 }
