@@ -9,7 +9,7 @@ function CreatePage() {
 
   return (
     <>
-      <button onClick={sendIt}>Enviar User</button>
+      <button onClick={sendIt}> Enviar User </button>
     </>
   );
 }

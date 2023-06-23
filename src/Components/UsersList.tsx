@@ -3,7 +3,7 @@ import {
   Table,
   TableData,
   TableTitleData,
-} from "../Styles/ReadStyle";
+} from "../Styles/Tables";
 import { userItem } from "../Types/usersItem";
 
 function UsersList({ usersData }: { usersData: userItem[] }) {

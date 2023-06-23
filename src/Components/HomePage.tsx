@@ -1,5 +1,5 @@
-import AppTitle from "../Styles/AppTitle";
-import { BodyStyle, BoxButtons } from "../Styles/HomeStyle";
+import {AppTitle} from "../Styles/Titles";
+import {HomePageBody, HomeBoxButtons} from '../Styles/PageStyles'
 import MainButton from "./buttons/MainButtons";
 import {
   faUserPlus,
@@ -7,15 +7,15 @@ import {
   faUsersViewfinder,
   faUserMinus,
 } from "@fortawesome/free-solid-svg-icons";
-import { Home } from "../Styles/HomeStyle";
+import { Home } from "../Styles/PageStyles";
 
 function HomePage() {
   return (
     <>
-      <BodyStyle />
+      <HomePageBody />
       <Home>
         <AppTitle>Users Control</AppTitle>
-        <BoxButtons>
+        <HomeBoxButtons>
           <MainButton
             LinkTo={"/adicionar"}
             ButtonText="Adicionar"
@@ -32,7 +32,7 @@ function HomePage() {
             ButtonText="Remover"
             icon={faUserMinus}
           />
-        </BoxButtons>
+        </HomeBoxButtons>
       </Home>
     </>
   );

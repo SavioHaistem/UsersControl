@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ReadStyle } from "../../Styles/ReadStyle";
+import { ReadPageBody } from "../../Styles/PageStyles";
 import UsersList from "../UsersList";
 import useApi from "../Hooks/useApi";
 
@@ -20,7 +20,7 @@ function ReadPage() {
 
   return (
     <>
-      <ReadStyle />
+      <ReadPageBody />
       <UsersList
         usersData={users || [{ name: "savio", id: 1, email: "teste.dantas" }]}
       />
