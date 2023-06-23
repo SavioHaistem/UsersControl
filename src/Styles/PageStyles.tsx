@@ -1,6 +1,15 @@
-import { createGlobalStyle, styled } from "styled-components";
+import { styled, createGlobalStyle } from "styled-components";
 
-const BodyStyle = createGlobalStyle`
+const ReadPageBody = createGlobalStyle`
+  body {
+    background-color: #917a95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+const HomePageBody = createGlobalStyle`
   body {
     background: linear-gradient(to top right, #68bdc2 -6%, #cf5880);
     height: 100vh;
@@ -10,6 +19,7 @@ const BodyStyle = createGlobalStyle`
     overflow: hidden;
   }
 `;
+
 const Home = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,7 +30,7 @@ const Home = styled.div`
   height: 90vh;
 `;
 
-const BoxButtons = styled.div`
+const HomeBoxButtons = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9rem, 9rem));
   grid-auto-rows: 9rem;
@@ -38,4 +48,4 @@ const BoxButtons = styled.div`
   }
 `;
 
-export { BoxButtons, BodyStyle, Home };
+export {ReadPageBody, Home, HomePageBody, HomeBoxButtons}

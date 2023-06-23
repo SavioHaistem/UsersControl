@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import "./getFont.css";
 
 const AppTitle = styled.p`
   justify-self: flex-start;
@@ -8,4 +7,4 @@ const AppTitle = styled.p`
   color: ${({ theme }) => theme.fonts.textOut};
 `;
 
-export default AppTitle;
+export { AppTitle }

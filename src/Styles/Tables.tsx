@@ -1,13 +1,5 @@
-import { createGlobalStyle, styled } from "styled-components";
+import { styled } from "styled-components";
 
-const ReadStyle = createGlobalStyle`
-  body {
-    background-color: #917a95;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  };
-`;
 const Table = styled.table`
   background-color: ${({ theme }) => theme.colors.backgroundPrimary};
   padding: 1.5rem;
@@ -33,4 +25,4 @@ const TableTitleData = styled.td`
   text-align: center;
 `;
 
-export { ReadStyle, Table, TableRow, TableTitleData, TableData };
+export { Table, TableRow, TableTitleData, TableData };
