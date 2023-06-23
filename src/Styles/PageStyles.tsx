@@ -1,5 +1,6 @@
 import { styled, createGlobalStyle } from "styled-components";
 
+//Estilização do body de cada página
 const ReadPageBody = createGlobalStyle`
   body {
     background-color: #917a95;
@@ -20,6 +21,14 @@ const HomePageBody = createGlobalStyle`
   }
 `;
 
+const UpdatePageBody = createGlobalStyle`
+  body {
+    
+  };
+`;
+
+
+//Estilização do componente padrão de cada pagina
 const Home = styled.div`
   display: flex;
   flex-direction: column;
@@ -30,6 +39,8 @@ const Home = styled.div`
   height: 90vh;
 `;
 
+
+//Estilização de componentes genéricos específicos de cada página
 const HomeBoxButtons = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9rem, 9rem));
