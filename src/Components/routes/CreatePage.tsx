@@ -1,7 +1,10 @@
 import useApi from "../Hooks/useApi";
 import NewUser from "../Hooks/useUser";
 import { CreatePageBody } from "../../Styles/PageStyles";
-import RoundedButton from "../buttons/RoundedButton";
+import CreateUserForm from "../CreateUserForm";
+import { createContext } from "react";
+
+export const createPageContext:any = createContext('');
 
 function CreatePage() {
 
@@ -11,11 +14,10 @@ function CreatePage() {
 
   return (
     <>
-      <CreatePageBody />
-        <CreateUserForm>
-
-        </CreateUserForm>
-      <RoundedButton onClick={{ sendIt }} icon={''}> Enviar </RoundedButton>
+      <createPageContext.Provider value={sendIt}>
+        <CreatePageBody/>
+        <CreateUserForm/>
+      </createPageContext.Provider>
     </>
   );
 }

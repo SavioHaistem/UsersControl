@@ -1,20 +1,18 @@
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import AwesomeIcon from "../../Styles/AwesomeIcon";
+import { useContext } from "react";
+import { createPageContext } from "../routes/CreatePage";
 import { RoundedButtonStyle } from "../../Styles/Buttons";
-import { propFunction } from "../../Types/propFunction";
-import { ReactNode } from "react";
 
-interface IPropsButton {
-  onClick: propFunction,
-  icon: any,
-  children: ReactNode
+interface IButtonProps {
+  buttonName: string
 }
-function RoundedButton({ onClick, icon, children }: IPropsButton) {
+
+function RoundedButton({buttonName}:IButtonProps) {
+
+  let sendIt = useContext(createPageContext);
+
   return (
   <>
-    <RoundedButtonStyle onClick={()=>{onClick}}>
-      <AwesomeIcon icon={icon}/>
-      {children}
+    <RoundedButtonStyle onClick={()=>{sendIt}} placeholder={buttonName}>
     </RoundedButtonStyle>
   </>
   );
