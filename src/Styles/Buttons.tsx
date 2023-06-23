@@ -25,4 +25,8 @@ const Linker = styled(Link)`
   font-family: ${({ theme }) => theme.fonts.menus};
   font-weight: 400;
 `;
-export { Linker };
+
+const RoundedButtonStyle = styled.button`
+  background-color: ${(({theme})=>theme.colors.primary)};
+`
+export { Linker, RoundedButtonStyle };

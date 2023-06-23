@@ -21,9 +21,15 @@ const HomePageBody = createGlobalStyle`
   }
 `;
 
-const UpdatePageBody = createGlobalStyle`
+const CreatePageBody = createGlobalStyle`
   body {
-    
+    height: 100vh;
+    width: 100vw;
+    background-color: #1f6c67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   };
 `;
 
@@ -59,4 +65,10 @@ const HomeBoxButtons = styled.div`
   }
 `;
 
-export {ReadPageBody, Home, HomePageBody, HomeBoxButtons}
+export {
+  ReadPageBody,
+  Home,
+  HomePageBody,
+  HomeBoxButtons,
+  CreatePageBody
+}
