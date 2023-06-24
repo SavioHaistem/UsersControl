@@ -9,13 +9,14 @@ export const createPageContext:any = createContext('');
 function CreatePage() {
 
   const sendIt = () => {
-    useApi("POST", "https://users-control-backend.onrender.com/users", NewUser);
+    console.log('executei')
+    useApi("POST", "https://users-control-backend.onrender.com/users", { name:'savio', email:'aalall', id: 1 });
   };
 
   return (
     <>
+    <CreatePageBody/>
       <createPageContext.Provider value={sendIt}>
-        <CreatePageBody/>
         <CreateUserForm/>
       </createPageContext.Provider>
     </>

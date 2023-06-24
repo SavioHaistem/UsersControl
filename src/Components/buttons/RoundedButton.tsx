@@ -1,18 +1,20 @@
 import { useContext } from "react";
-import { createPageContext } from "../routes/CreatePage";
 import { RoundedButtonStyle } from "../../Styles/Buttons";
+import { createPageContext } from "../routes/CreatePage";
 
 interface IButtonProps {
-  buttonName: string
+  buttonName?: string,
+  submit?: any
 }
 
 function RoundedButton({buttonName}:IButtonProps) {
 
-  let sendIt = useContext(createPageContext);
+  const sendIt:any = useContext(createPageContext)
 
   return (
   <>
-    <RoundedButtonStyle onClick={()=>{sendIt}} placeholder={buttonName}>
+    <RoundedButtonStyle onSubmit={()=>sendIt}>
+      {buttonName}
     </RoundedButtonStyle>
   </>
   );

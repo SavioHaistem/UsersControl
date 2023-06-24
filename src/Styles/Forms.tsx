@@ -5,9 +5,9 @@ const UserForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
-  width: 50vw;
-  background-color: ${({theme})=>theme.colors.backgroundPrimary};
+  height: 15rem;
+  width: 30rem;
+  background-color: ${({theme})=> theme.colors.backgroundPrimary};
   border-radius: 1rem;
 `
 const TextFormInput = styled.input`

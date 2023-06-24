@@ -28,5 +28,11 @@ const Linker = styled(Link)`
 
 const RoundedButtonStyle = styled.button`
   background-color: ${(({theme})=>theme.colors.primary)};
+  margin-top: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  height: 2rem;
+  width: 10rem;
 `
 export { Linker, RoundedButtonStyle };
