@@ -11,6 +11,7 @@ function CreatePage() {
   const sendIt = () => {
     console.log('executei')
     useApi("POST", "https://users-control-backend.onrender.com/users", { name:'savio', email:'aalall', id: 1 });
+    window.alert("Usuário enviado com sucesso")
   };
 
   return (

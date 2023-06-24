@@ -10,10 +10,10 @@ interface IButtonProps {
 function RoundedButton({buttonName}:IButtonProps) {
 
   const sendIt:any = useContext(createPageContext)
-
+  console.log(sendIt)
   return (
   <>
-    <RoundedButtonStyle onSubmit={()=>sendIt}>
+    <RoundedButtonStyle onClick={()=>sendIt()}>
       {buttonName}
     </RoundedButtonStyle>
   </>
