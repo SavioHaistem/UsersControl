@@ -1,6 +1,11 @@
 import axios from "axios";
 
-function useApi(method: string, url: string, configs: object = {}): any {
+function useApi(method: string, url: string, body: object = {}) {
+
+  //method prop is a http method to be used;
+  //url is a link to http acess;
+  //body is the object to be sent, only in especific cases;
+
   const UpdateApi =async()=> {
     
   };
@@ -15,7 +20,7 @@ function useApi(method: string, url: string, configs: object = {}): any {
   };
 
   const PostApi =async()=> {
-    return await axios.post(`${url}`, configs);
+    return await axios.post(`${url}`, body);
   };
 
   return method === 'POST' ? PostApi() : 

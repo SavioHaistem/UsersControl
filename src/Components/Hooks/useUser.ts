@@ -1,21 +1,16 @@
-const getAleatorId: any =()=> {
-  let aleatorId = Math.floor(Math.random() * 1000).toString().padStart(5, "0");
-  console.log(Number(aleatorId));
-  return Number(aleatorId);
-}
-
-class createUser { 
+interface Iuser {
   name: string;
   email: string;
-  id: number;
-
-  constructor(name:string, email:string) {
-    this.name = name;
-    this.email = email;
-    this.id = getAleatorId();
-  }
 }
 
-const NewUser = new createUser('OceanGate','bilios.burricos');
+function getAleatorId():number {
+  let id = Math.floor(Math.random() * 1000).toString().padStart(9,'0');
+  return Number(id)
+}
 
-export default NewUser;
+function useUser({name, email}:Iuser) {
+  let userId = getAleatorId()
+  return { userId, name, email }
+}
+
+export default useUser
